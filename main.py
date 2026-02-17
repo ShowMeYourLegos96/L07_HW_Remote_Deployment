@@ -1,7 +1,7 @@
-import menu 
+from menu import Menu
 
 
-mainMenu = menu()
+mainMenu = Menu()
 
 mainMenu.addOption("Check available memory")
 mainMenu.addOption("View Network Connections")
