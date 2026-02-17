@@ -1,5 +1,6 @@
 import menu 
 
+
 mainMenu = menu()
 
 mainMenu.addOption("Check available memory")
