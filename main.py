@@ -1,7 +1,13 @@
+import run_bash_cmd_function
+def main():
+ mainMenu = Menu()
 
-from menu import Menu
-#if __name__ == '__main__':
-  #m = main()
+ def options_constructor():
+    pass
+if __name__ == '__main__':
+    from menu import Menu
+    main()
+
 
 #call the class
 mainMenu = Menu()

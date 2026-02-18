@@ -1,4 +1,5 @@
-import run_bash_cmd_function
+from run_bash_cmd_function import run_bash_cmd
+
 class Menu:
     def __init__(self):
         self.options = []
@@ -8,15 +9,14 @@ class Menu:
         
     
     def getInput(self):
-        
-        for GI in self.options:
+        for g in self.options:
             #print(f'{self.options}')
             GI = int(input(f'{self.options}')) #makes this string into integer
             print("GI type is ", type(GI)) #type is now an integer
 
             if GI == 1 or 2 or 3:#checks if the input is 1,2, or 3 
-             run_bash_cmd_function(GI)#will run the function 
-             continue #will repeat the prompt for the user to enter again
+              run_bash_cmd(GI)#will run the function 
+              continue #will repeat the prompt for the user to enter again
 
             elif GI == 4: #if user press quit
                 break
